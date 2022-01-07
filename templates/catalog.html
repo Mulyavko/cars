@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <title>Автомобили</title>
+    <!--{% include "shapka.html" %}-->
+    <body>
+        <ul>
+           {%for brand in Brands %}
+                <li>Марка {{ brand.id }}: {{ brand.strana }}</li>
+            {% endfor %}    
+        </ul>
+    </body>
+</html>
